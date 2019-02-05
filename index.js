@@ -2,9 +2,11 @@ var katzDeliLine = [];
 
 //Takes the current line of people and the new person's name to be added to the deli line
 //and displays a welcoming message to the console
-function takeANumber(katzDeliLine, newPerson) {
-  katzDeliLine.push(newPerson)
-  var result = `Welcome, ${newPerson}. You are number ${katzDeliLine.length} in line.`
+function takeANumber(katzDeliLine) {
+ // katzDeliLine.push(newPerson)
+  
+  katzDeliLine.push(katzDeliLine.length +1)
+  var result = `Welcome. You are number ${katzDeliLine.length}.`
   return result
 }
 
